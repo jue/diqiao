@@ -1,0 +1,24 @@
+{
+  "name": "diqiao",
+  "version": "1.0.1",
+  "description": "diqiao office site",
+  "author": "xiangjianfeng",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.9.5",
+    "element-ui": "^2.13.0",
+    "nuxt": "^2.0.0",
+    "postcss-px2rem": "^0.3.0",
+    "vue-video-player": "^5.0.2"
+  },
+  "devDependencies": {
+    "less": "^3.11.1",
+    "less-loader": "^5.0.0"
+  }
+}
