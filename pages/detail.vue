@@ -169,7 +169,7 @@ export default {
           pretxt: '',
           name: '含钙软糖',
           line1: '',
-          line2: '每瓶58粒'
+          line2: '每瓶约58粒'
         },
         child00234: {
           pretxt: '专为3岁以上儿童设计',
