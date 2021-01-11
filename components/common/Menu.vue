@@ -2,7 +2,7 @@
   <div class="menu">
     <div class="pc">
       <span class="logo">
-        <img alt src="~static/imgs/logo.png" />
+        <img alt src="/imgs/logo.png" />
       </span>
       <nuxt-link :class="$route.name == 'index' ? 'curr' : '' " class="link" to="/">
       <i class="el-icon-jue-home"></i>
@@ -13,22 +13,22 @@
         <i class="el-icon-jue-products"></i>产品中心</span>
         <span class="sub-menu">
           <nuxt-link class="sub-link" to="/products?cate=pregnant">
-            <img alt src="~static/imgs/menu/p_cat001.png" />
+            <img alt src="/imgs/menu/p_cat001.png" />
             <span>孕产钙营养</span>
           </nuxt-link>
 
           <nuxt-link class="sub-link" to="/products?cate=baby">
-            <img alt src="~static/imgs/menu/p_cat002.png" />
+            <img alt src="/imgs/menu/p_cat002.png" />
             <span>婴幼儿钙营养</span>
           </nuxt-link>
 
           <nuxt-link class="sub-link" to="/products?cate=child">
-            <img alt src="~static/imgs/menu/p_cat003.png" />
+            <img alt src="/imgs/menu/p_cat003.png" />
             <span>儿童钙营养</span>
           </nuxt-link>
 
           <nuxt-link class="sub-link" to="/products?cate=adult">
-            <img alt src="~static/imgs/menu/p_cat004.png" />
+            <img alt src="/imgs/menu/p_cat004.png" />
             <span>成人钙营养</span>
           </nuxt-link>
         </span>

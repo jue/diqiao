@@ -15,11 +15,11 @@
       </div>
       <div class="qrcode-box">
         <div class="qrcode">
-          <img src="~static/imgs/wechat_qrcode.png" />
+          <img src="/imgs/wechat_qrcode.png" />
           <span>迪巧微信公众号</span>
         </div>
         <div class="qrcode">
-          <img src="~static/imgs/weibo_qrcode.png" />
+          <img src="/imgs/weibo_qrcode.png" />
           <span>迪巧新浪微博</span>
         </div>
       </div>
