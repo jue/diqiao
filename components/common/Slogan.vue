@@ -1,7 +1,7 @@
 <template>
   <div class="slogan">
     <span class="logo">
-      <img alt src="~static/imgs/logo.png" />
+      <img alt src="~static/imgs/logo2.png" />
     </span>
     <!-- <span class="text">美国迪巧 进口钙销连续3年销量领先</span> -->
   </div>

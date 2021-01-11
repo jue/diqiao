@@ -164,6 +164,7 @@ export default {
   // align-items: center;
   // justify-content: center;
   .logo {
+    width: 100px;
     display: inline-block;
     margin-right: 112px;
     vertical-align: bottom;
