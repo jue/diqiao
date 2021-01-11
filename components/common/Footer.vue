@@ -10,7 +10,7 @@
           <nuxt-link class="link" to="/honor">迪巧荣誉</nuxt-link>|
           <span class="link" @click="$store.commit('update_buyBox', true)" >在线购买</span>
         </div>
-        <div class="com">青岛百洋医药股份有限公司 互联网药品信息服务资格证书</div>
+        <div class="com">青岛百洋医药股份有限公司 互联网药品信息服务资格证书  <a target="_blank" href="http://www.beian.gov.cn/">鲁ICP备10008593号-5</a> </div>
         <div class="copyright">Copyright © 迪巧 版权所有 鲁ICP备10008593号-5 All Rights Reserved.</div>
       </div>
       <div class="qrcode-box">
