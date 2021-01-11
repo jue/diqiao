@@ -3,7 +3,7 @@
     <span class="logo">
       <img alt src="~static/imgs/logo.png" />
     </span>
-    <span class="text">美国迪巧 进口钙销连续3年销量领先</span>
+    <!-- <span class="text">美国迪巧 进口钙销连续3年销量领先</span> -->
   </div>
 </template>
 <style lang="less" scoped>
@@ -13,7 +13,7 @@
   justify-content: center;
   padding: 60px 0;
   .logo {
-    width: 84px;
+    width: 515px;
   }
   .text {
     font-size: 26px;
@@ -28,7 +28,7 @@
   .slogan {
     padding: 30px 0;
     .logo {
-      width: 40px;
+      width: 200px;
     }
     .text {
       font-size: 16px;
