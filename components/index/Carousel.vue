@@ -38,6 +38,14 @@ export default {
         {
           imgUrl: '/imgs/index/honor005.png',
           link: '#'
+        },
+        {
+          imgUrl: '/imgs/index/honor006.png',
+          link: '#'
+        },
+        {
+          imgUrl: '/imgs/index/honor007.png',
+          link: '#'
         }
       ]
     }
