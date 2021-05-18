@@ -44,7 +44,7 @@ import Footer from '@/components/common/Footer.vue'
 import SlideImg from '@/components/products/SlideImg.vue'
 export default {
   head: {
-    title: '迪巧官网 - 美国迪巧 进口钙连续四年销量领先'
+    title: '迪巧官网 - 迪巧 进口钙领先品牌'
   },
   components: {
     InnerTop,

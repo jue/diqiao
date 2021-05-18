@@ -34,7 +34,7 @@ import TimeLine from '@/components/TimeLine.vue'
 export default {
   layout: 'inner',
   head: {
-    title: '迪巧官网 - 美国迪巧 进口钙连续四年销量领先'
+    title: '迪巧官网 - 迪巧 进口钙领先品牌'
   },
   async asyncData({app}) {
     return await app.$axios.$post('/tree/index', {
