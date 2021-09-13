@@ -171,6 +171,12 @@ export default {
           line1: '',
           line2: '每瓶约58粒'
         },
+        child009: {
+          pretxt: '',
+          name: '',
+          line1: '',
+          line2: ''
+        },
         child00234: {
           pretxt: '专为3岁以上儿童设计',
           name: '钙维生素D咀嚼片',
