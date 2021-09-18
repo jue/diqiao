@@ -123,6 +123,12 @@ export default {
           line1: '辅食营养补充食品',
           line2: '每盒30袋'
         },
+        baby004: {
+          pretxt: '专为0-6岁宝宝设计',
+          name: '迪巧小黄条液体钙条',
+          line1: '补充钙VD和VK',
+          line2: '20条/盒'
+        },
         child001: {
           pretxt: '专为3岁以上儿童设计',
           name: '儿童维D钙咀嚼片',
@@ -172,10 +178,10 @@ export default {
           line2: '每瓶约58粒'
         },
         child009: {
-          pretxt: '',
-          name: '',
-          line1: '',
-          line2: ''
+          pretxt: '专为0-6岁宝宝设计',
+          name: '迪巧小黄条液体钙条',
+          line1: '补充钙VD和VK',
+          line2: '20条/盒'
         },
         child00234: {
           pretxt: '专为3岁以上儿童设计',

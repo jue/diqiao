@@ -60,7 +60,7 @@ export default {
         // child: ['child001', 'child00234'],
         child: ['child001', 'child00234','child00567','child008','child009'],
         // baby: ['baby001', 'baby002'],
-        baby: ['baby001', 'baby002', 'baby003'],
+        baby: ['baby001', 'baby002', 'baby003', 'baby004'],
         adult: ['adult001', 'adult002', 'pregnant001', 'adult003']
       }
     }
