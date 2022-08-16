@@ -32,7 +32,7 @@
       </a>
       <a class="item" href="https://www.baiyangwang.com/" target="_blank">
         <img src="/imgs/buy/by.png" />
-        <span>百洋商城</span>
+        <span>百洋挑剔喵商城</span>
       </a>
     </div>
   </el-dialog>
