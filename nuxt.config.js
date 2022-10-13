@@ -9,7 +9,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' },
-      { hid: 'description', name: 'description', content: '迪巧D-Cal，进口钙领先品牌，钙质细腻促吸收。20年来，坚持美国本土生产，采用美国优质钙源，致力于向全球消费者提供纯净无添加、效果有保障的安心好钙。' },
+      { hid: 'description', name: 'description', content: '迪巧D-Cal,进口钙领先品牌,钙质细腻促吸收。22年来,坚持采用优质钙源,致力于向全球消费者提供纯净无添加、效果有保障的安心好钙。' },
       { property: "og:image", content: 'http://www.diqiao.com.cn/imgs/logo.png' }
     ],
     link: [
