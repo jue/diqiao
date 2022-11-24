@@ -98,6 +98,11 @@
           <el-menu-item>
             <a href="https://www.baiyangwang.com/">百洋商城</a>
           </el-menu-item>
+          <el-menu-item>
+            <a
+              href="https://mobile.yangkeduo.com/mall_page.html?mall_id=205546545"
+            >拼多多迪巧官方旗舰店</a>
+          </el-menu-item>
         </el-submenu>
       </el-menu>
     </el-drawer>

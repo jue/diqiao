@@ -34,6 +34,10 @@
         <img src="/imgs/buy/by.png" />
         <span>百洋挑剔喵商城</span>
       </a>
+      <a class="item" href="https://mobile.yangkeduo.com/mall_page.html?mall_id=205546545" target="_blank">
+        <img src="https://pic8.58cdn.com.cn/nowater/webim/big/n_v2e175e37bb79a43a1803ccc518d9db28f.png" />
+        <span>拼多多迪巧官方旗舰店</span>
+      </a>
     </div>
   </el-dialog>
 </template>
