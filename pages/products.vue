@@ -58,9 +58,9 @@ export default {
         pregnant: ['pregnant001', 'pregnant002'],
         // child: ['child001', 'child002', 'child003', 'child004'],
         // child: ['child001', 'child00234'],
-        child: ['child001', 'child00234','child00567','child008','child009'],
+        child: ['child001', 'child00234','child00567','child009'],
         // baby: ['baby001', 'baby002'],
-        baby: ['baby001', 'baby002', 'baby003', 'baby004'],
+        baby: ['baby001', 'baby004'],
         adult: ['adult001', 'adult002', 'pregnant001', 'adult003']
       }
     }
