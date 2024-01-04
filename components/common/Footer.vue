@@ -4,16 +4,36 @@
       <div class="info">
         <div class="links">
           <nuxt-link class="link" to="/">首页</nuxt-link>|
-          <nuxt-link class="link" to="/products/?cate=pregnant">产品中心</nuxt-link>|
-          <nuxt-link class="link" to="/knowledge">钙营养学院</nuxt-link>|
+          <nuxt-link class="link" to="/products/?cate=pregnant"
+            >产品中心</nuxt-link
+          >| <nuxt-link class="link" to="/knowledge">钙营养学院</nuxt-link>|
           <nuxt-link class="link" to="/plan">骨健康领先计划</nuxt-link>|
           <nuxt-link class="link" to="/honor">迪巧荣誉</nuxt-link>|
-          <span class="link" @click="$store.commit('update_buyBox', true)" >在线购买</span>
+          <span class="link" @click="$store.commit('update_buyBox', true)"
+            >在线购买</span
+          >
         </div>
-        <div class="com">青岛百洋医药股份有限公司 互联网药品信息服务资格证书  <a target="_blank" href="http://www.beian.gov.cn/">鲁ICP备10008593号-5</a> 
+        <div class="com">
+          青岛百洋医药股份有限公司 互联网药品信息服务资格证书
+          <a target="_blank" href="http://www.beian.gov.cn/"
+            >鲁ICP备10008593号-5</a
+          >
           <br />客服电话：400-618-9819
         </div>
-        <div class="copyright">Copyright © 迪巧 版权所有 鲁ICP备10008593号-5 All Rights Reserved.</div>
+        <div class="copyright">
+          Copyright © 迪巧 版权所有
+          <a
+            href="https://beian.mps.gov.cn/#/query/webSearch?code=37020302372365"
+            target="_blank"
+          >
+            <img
+              alt
+              src="../../static/imgs/beian.png"
+              style="height: 24px"
+            />鲁公网安备37020302372365</a
+          >
+          All Rights Reserved.
+        </div>
       </div>
       <div class="qrcode-box">
         <div class="qrcode">
