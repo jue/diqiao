@@ -30,7 +30,7 @@
               alt
               src="../../static/imgs/beian.png"
               style="height: 17px; vertical-align: bottom;"
-            />鲁公网安备37020302372365</a
+            />鲁公网安备37020302372365号</a
           >
           
         </div>
