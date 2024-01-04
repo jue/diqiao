@@ -29,7 +29,7 @@
             <img
               alt
               src="../../static/imgs/beian.png"
-              style="height: 24px"
+              style="height: 17px; vertical-align: bottom;"
             />鲁公网安备37020302372365</a
           >
           All Rights Reserved.
