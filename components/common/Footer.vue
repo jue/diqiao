@@ -21,7 +21,7 @@
           <br />客服电话：400-618-9819
         </div>
         <div class="copyright">
-          Copyright © 迪巧 版权所有
+          Copyright © 迪巧 版权所有 All Rights Reserved.
           <a
             href="https://beian.mps.gov.cn/#/query/webSearch?code=37020302372365"
             target="_blank"
@@ -32,7 +32,7 @@
               style="height: 17px; vertical-align: bottom;"
             />鲁公网安备37020302372365</a
           >
-          All Rights Reserved.
+          
         </div>
       </div>
       <div class="qrcode-box">
