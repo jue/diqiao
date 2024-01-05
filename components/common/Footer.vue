@@ -23,7 +23,7 @@
         <div class="copyright">
           Copyright © 迪巧 版权所有 All Rights Reserved.
           <a
-            href="https://beian.mps.gov.cn/#/query/webSearch?code=37020302372365"
+            href="https://beian.miit.gov.cn/"
             target="_blank"
           >
             <img
