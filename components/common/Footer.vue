@@ -14,18 +14,20 @@
           >
         </div>
         <div class="com">
-          青岛百洋医药股份有限公司 互联网药品信息服务资格证书
+          青岛百洋医药股份有限公司 互联网药品信息服务资格证书 <a target="_blank" href="http://www.beian.gov.cn/"
+            >鲁ICP备10008593号-5</a
+          >
           <br />客服电话：400-618-9819
         </div>
         <div class="copyright">
           Copyright © 迪巧 版权所有 All Rights Reserved. <a
-            href="https://beian.miit.gov.cn/"
+            href="https://beian.mps.gov.cn/#/query/webSearch?code=37020302372365"
             target="_blank"
           >
             <img
               alt
               src="../../static/imgs/beian.png"
-              style="height: 17px; vertical-align: bottom;"
+              style="height: 17px; vertical-align: text-bottom;"
             />鲁公网安备37020302372365号</a
           >
         </div>
