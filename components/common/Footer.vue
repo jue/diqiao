@@ -27,7 +27,7 @@
             <img
               alt
               src="../../static/imgs/beian.png"
-              style="height: 17px; vertical-align: text-bottom;"
+              style="height: 17px; vertical-align: text-bottom; margin-right:2px;"
             />鲁公网安备37020302372365号</a
           >
         </div>
