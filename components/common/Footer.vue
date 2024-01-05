@@ -22,17 +22,6 @@
         </div>
         <div class="copyright">
           Copyright © 迪巧 版权所有 All Rights Reserved.
-          <a
-            href="https://beian.miit.gov.cn/"
-            target="_blank"
-          >
-            <img
-              alt
-              src="../../static/imgs/beian.png"
-              style="height: 17px; vertical-align: bottom;"
-            />鲁公网安备37020302372365号</a
-          >
-          
         </div>
       </div>
       <div class="qrcode-box">
