@@ -14,7 +14,7 @@
           >
         </div>
         <div class="com">
-          青岛百洋医药股份有限公司 互联网药品信息服务资格证书 <a target="_blank" href="http://www.beian.gov.cn/"
+          青岛百洋医药股份有限公司 互联网药品信息服务资格证书 <a target="_blank" href="https://beian.miit.gov.cn/"
             >鲁ICP备10008593号-5</a
           >
           <br />客服电话：400-618-9819
