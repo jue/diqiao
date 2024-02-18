@@ -5,17 +5,19 @@
   </div>
 </template>
 <script>
-import Menu from '@/components/common/Menu.vue'
+import Menu from "@/components/common/Menu.vue";
 export default {
   components: {
-    Menu
+    Menu,
   },
   computed: {
-    topIMg(){
-      return this.$route.name == 'index' ? '/imgs/index/top1.jpg' : '/imgs/banner.png'
-    }
-  }
-}
+    topIMg() {
+      return this.$route.name == "index"
+        ? "/imgs/index/top1.jpg"
+        : "/imgs/banner.jpg";
+    },
+  },
+};
 </script>
 <style lang="less" scoped>
 .top {
