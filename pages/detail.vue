@@ -5,17 +5,17 @@
         <el-carousel arrow="always" class="carousel">
           <el-carousel-item>
             <div class="item">
-              <img :src="'/imgs/product/'+$route.query.long+'/1.png'" />
+              <img :src="'/imgs/product/' + $route.query.long + '/1.png'" />
             </div>
           </el-carousel-item>
           <el-carousel-item>
             <div class="item">
-              <img :src="'/imgs/product/'+$route.query.long+'/2.png'" />
+              <img :src="'/imgs/product/' + $route.query.long + '/2.png'" />
             </div>
           </el-carousel-item>
           <el-carousel-item>
             <div class="item">
-              <img :src="'/imgs/product/'+$route.query.long+'/3.png'" />
+              <img :src="'/imgs/product/' + $route.query.long + '/3.png'" />
             </div>
           </el-carousel-item>
           <!-- <el-carousel-item>
@@ -27,15 +27,15 @@
       </el-col>
       <el-col :md="14" :xs="24">
         <div>
-          <div class="pretxt">{{json[$route.query.long].pretxt}}</div>
+          <div class="pretxt">{{ json[$route.query.long].pretxt }}</div>
           <div class="title">
             <i class="iconfont iconlogo"></i>
-            {{json[$route.query.long].name}}
+            {{ json[$route.query.long].name }}
           </div>
           <div class="gg">
-            产品用途：{{json[$route.query.long].line1}}
+            产品用途：{{ json[$route.query.long].line1 }}
             <br />
-            产品规格：{{json[$route.query.long].line2}}
+            产品规格：{{ json[$route.query.long].line2 }}
           </div>
         </div>
 
@@ -49,23 +49,15 @@
     </el-row>
     <el-row>
       <el-col :span="24">
-        <img
-          :src="'/imgs/product/long/'+$route.query.long+'_long.jpg'"
-          @click="onPreview"
-          class="desc-img"
-        />
-        <img
-          :src="'/imgs/product/'+$route.query.long+'/spec2.jpg'"
-          class="desc-img"
-        />
+
+        <img :src="'/imgs/product/long/' + $route.query.long + '_long.jpg'" @error="$handleImageError"
+          @click="onPreview" class="desc-img" />
+        <img :src="'/imgs/product/' + $route.query.long + '/spec2.jpg'" class="desc-img" @error="$handleImageError" />
         <!-- <el-image v-else :preview-src-list="['/imgs/product/'+$route.query.long+'/1.png']" :src="'/imgs/product/long/'+$route.query.long+'_long.jpg'" class="desc-img"></el-image> -->
       </el-col>
     </el-row>
-    <image-viewer
-      :on-close="closeViewer"
-      :url-list="['/imgs/product/'+$route.query.long+'/spec.jpg']"
-      v-if="showViewer"
-    ></image-viewer>
+    <image-viewer :on-close="closeViewer" :url-list="['/imgs/product/' + $route.query.long + '/spec.jpg']"
+      v-if="showViewer"></image-viewer>
   </div>
 </template>
 
@@ -80,15 +72,15 @@ export default {
     ImageViewer
   },
   methods: {
-    onPreview() {
+    onPreview () {
       this.showViewer = true
     },
     // 关闭查看器
-    closeViewer() {
+    closeViewer () {
       this.showViewer = false
-    }
+    },
   },
-  data() {
+  data () {
     return {
       showViewer: false,
       json: {
@@ -100,6 +92,12 @@ export default {
           line2: '每瓶30片、60片、90片或120片'
         },
         pregnant002: {
+          pretxt: '专为孕妈设计',
+          name: '钙维生素D咀嚼片',
+          line1: '补充钙、维生素D',
+          line2: '每瓶86片或106片'
+        },
+        pregnant003: {
           pretxt: '专为孕妈设计',
           name: '钙维生素D咀嚼片',
           line1: '补充钙、维生素D',
@@ -189,11 +187,23 @@ export default {
           line1: '补充钙、维生素D',
           line2: '每瓶45片或80片'
         },
+        child010: {
+          pretxt: '专为0-6岁宝宝设计',
+          name: '迪巧小黄条液体钙条',
+          line1: '补充钙VD和VK',
+          line2: '20条/盒'
+        },
+        child011: {
+          pretxt: '专为0-6岁宝宝设计',
+          name: '迪巧小黄条液体钙条',
+          line1: '补充钙VD和VK',
+          line2: '20条/盒'
+        },
         adult001: {
           pretxt: '专为成人设计',
           name: '碳酸钙D3片',
           line1:
-            '用于妊娠和哺乳期妇女、更年期妇女、老年人等的钙补充剂，并帮助防治骨质疏松症。',
+            '用于妊娠和哺乳期妇女、更年期妇女、老年人等的钙补充剂并帮助防治骨质疏松症。',
           line2: '每瓶30片、60片或90片'
         },
         adult002: {
@@ -203,6 +213,18 @@ export default {
           line2: '30片'
         },
         adult003: {
+          pretxt: '专为成人设计',
+          name: '钙维生素D维生素K咀嚼片',
+          line1: '补充钙、维生素D、维生素K',
+          line2: '每瓶90片'
+        },
+        adult004: {
+          pretxt: '专为成人设计',
+          name: '钙维生素D维生素K咀嚼片',
+          line1: '补充钙、维生素D、维生素K',
+          line2: '每瓶90片'
+        },
+        adult005: {
           pretxt: '专为成人设计',
           name: '钙维生素D维生素K咀嚼片',
           line1: '补充钙、维生素D、维生素K',
@@ -218,12 +240,14 @@ export default {
 .content {
   padding: 0 60px;
 }
+
 .carousel {
   /deep/ .el-carousel__arrow {
     background: none;
     font-size: 40px;
     color: #24a18f;
   }
+
   .item {
     text-align: center;
     padding: 0 80px;
@@ -231,13 +255,14 @@ export default {
     align-items: center;
     position: relative;
     height: 100%;
-    img {
-    }
+
+    img {}
   }
 }
 
 .title {
   font-size: 38px;
+
   .iconlogo {
     font-size: 74px;
     vertical-align: middle;
@@ -245,17 +270,20 @@ export default {
     top: -5px;
   }
 }
+
 .gg {
   font-size: 16px;
   line-height: 1.8;
   padding: 10px 0 20px;
 }
+
 .desc {
   font-size: 26px;
   line-height: 1.6;
 
   .buy {
     padding: 10px;
+
     .btn {
       color: #fff;
       background: #24a18f;
@@ -266,6 +294,7 @@ export default {
       cursor: pointer;
     }
   }
+
   .small {
     font-size: 16px;
     // text-align: center;
@@ -277,11 +306,13 @@ export default {
   display: block;
   margin: 0 auto;
 }
+
 //iphone
 @media only screen and (max-width: 414px) {
   .content {
     padding: 0;
   }
+
   .carousel {
     .item {
       padding: 0 20px;
@@ -290,6 +321,7 @@ export default {
 
   .title {
     font-size: 22px;
+
     .iconlogo {
       font-size: 46px;
       top: -2px;
@@ -298,10 +330,12 @@ export default {
 
   .desc {
     font-size: 14px;
+
     .small {
       font-size: 12px;
     }
   }
+
   .desc-img {
     padding-top: 30px;
   }

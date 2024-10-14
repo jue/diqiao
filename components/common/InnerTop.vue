@@ -11,7 +11,7 @@ export default {
     Menu,
   },
   computed: {
-    topIMg() {
+    topIMg () {
       return this.$route.name == "index"
         ? "/imgs/index/top1.jpg"
         : "/imgs/banner.jpg";
@@ -30,12 +30,17 @@ export default {
     position: relative;
     margin-top: -110px;
     min-width: 1186px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
+
 @media only screen and (max-width: 414px) {
   .top {
     margin-bottom: 40px;
     background-size: 100%;
+
     .top-img {
       margin-top: 0;
       min-width: 100%;

@@ -6,22 +6,22 @@
         <span class="divider"></span>
         <nuxt-link class="p-name" to="/products?cate=pregnant">
           孕产期钙营养
-          <i class="el-icon-arrow-down" v-if="$route.query.cate=='pregnant'"></i>
+          <i class="el-icon-arrow-down" v-if="$route.query.cate == 'pregnant'"></i>
         </nuxt-link>
         <span class="divider"></span>
         <nuxt-link class="p-name" to="/products?cate=baby">
           婴幼儿钙营养
-          <i class="el-icon-arrow-down" v-if="$route.query.cate=='baby'"></i>
+          <i class="el-icon-arrow-down" v-if="$route.query.cate == 'baby'"></i>
         </nuxt-link>
         <span class="divider"></span>
         <nuxt-link class="p-name" to="/products?cate=child">
           儿童钙营养
-          <i class="el-icon-arrow-down" v-if="$route.query.cate=='child'"></i>
+          <i class="el-icon-arrow-down" v-if="$route.query.cate == 'child'"></i>
         </nuxt-link>
         <span class="divider"></span>
         <nuxt-link class="p-name" to="/products?cate=adult">
           成人钙营养
-          <i class="el-icon-arrow-down" v-if="$route.query.cate=='adult'"></i>
+          <i class="el-icon-arrow-down" v-if="$route.query.cate == 'adult'"></i>
         </nuxt-link>
         <span class="divider"></span>
       </div>
@@ -52,28 +52,28 @@ export default {
     Footer,
     SlideImg
   },
-  data() {
+  data () {
     return {
       arr: {
-        pregnant: ['pregnant001', 'pregnant002'],
+        pregnant: ['pregnant001', 'pregnant002', 'pregnant003'],
         // child: ['child001', 'child002', 'child003', 'child004'],
         // child: ['child001', 'child00234'],
-        child: ['child001', 'child00234','child00567','child009'],
+        child: ['child001', 'child00234', 'child00567', 'child009', 'child010', 'child011'],
         // baby: ['baby001', 'baby002'],
         baby: ['baby001', 'baby004'],
-        adult: ['adult001', 'adult002', 'pregnant001', 'adult003']
+        adult: ['adult001', 'adult002', 'pregnant001', 'adult003', 'adult004', 'adult005']
       }
     }
   },
-  mounted() {},
+  mounted () { },
   methods: {
-    setH() {
+    setH () {
       let w = window.innerWidth < 1186 ? 1186 : window.innerWidth
       this.h = w * 0.4375 + 'px'
     }
   },
   watch: {
-    '$route.query.cate': function() {
+    '$route.query.cate': function () {
       console.log(this.$route.query.cate)
     }
   }
@@ -92,22 +92,23 @@ export default {
   align-items: center;
   justify-content: center;
   margin: 0 auto 53px;
+
   .divider {
     display: block;
     width: 3px;
     height: 50px;
-    background: linear-gradient(
-      rgba(250, 250, 250, 0),
-      rgba(250, 250, 250, 1),
-      rgba(250, 250, 250, 0)
-    );
+    background: linear-gradient(rgba(250, 250, 250, 0),
+        rgba(250, 250, 250, 1),
+        rgba(250, 250, 250, 0));
   }
+
   .p-name {
     width: 22.7%;
     text-align: center;
     position: relative;
     cursor: pointer;
     color: #fff;
+
     .el-icon-arrow-down {
       position: absolute;
       top: 100%;
@@ -125,23 +126,28 @@ export default {
   .container {
     width: 100%;
   }
+
   .top {
     margin-bottom: 30px;
     background-size: 100%;
     height: 100px;
     height: 67px;
+
     .top-img {
       margin-top: 0;
       min-width: 100%;
     }
   }
+
   .tab {
     font-size: 12px;
     width: 98%;
     line-height: 40px;
+
     .divider {
       height: 14px;
     }
+
     .p-name {
       .el-icon-arrow-down {
         font-size: 20px;
