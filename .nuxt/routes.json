@@ -3,77 +3,66 @@
     "name": "detail",
     "path": "/detail",
     "component": "/Users/xiangjianfeng/Github/diqiao/pages/detail.vue",
-    "chunkName": "pages/detail",
-    "_name": "_ba5b4c24"
+    "chunkName": "pages/detail"
   },
   {
     "name": "honor",
     "path": "/honor",
     "component": "/Users/xiangjianfeng/Github/diqiao/pages/honor.vue",
-    "chunkName": "pages/honor",
-    "_name": "_46311446"
+    "chunkName": "pages/honor"
   },
   {
     "name": "knowledge",
     "path": "/knowledge",
     "component": "/Users/xiangjianfeng/Github/diqiao/pages/knowledge/index.vue",
-    "chunkName": "pages/knowledge/index",
-    "_name": "_1ccad034"
+    "chunkName": "pages/knowledge/index"
   },
   {
     "name": "page",
     "path": "/page",
     "component": "/Users/xiangjianfeng/Github/diqiao/pages/page.vue",
-    "chunkName": "pages/page",
-    "_name": "_33ed726c"
+    "chunkName": "pages/page"
   },
   {
     "name": "plan",
     "path": "/plan",
     "component": "/Users/xiangjianfeng/Github/diqiao/pages/plan.vue",
-    "chunkName": "pages/plan",
-    "_name": "_7013be06"
+    "chunkName": "pages/plan"
   },
   {
     "name": "products",
     "path": "/products",
     "component": "/Users/xiangjianfeng/Github/diqiao/pages/products.vue",
-    "chunkName": "pages/products",
-    "_name": "_d6dcf77e"
+    "chunkName": "pages/products"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/xiangjianfeng/Github/diqiao/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_30df0376"
+    "chunkName": "pages/index"
   },
   {
     "name": "knowledge-list-slug",
     "path": "/knowledge/list/:slug?",
     "component": "/Users/xiangjianfeng/Github/diqiao/pages/knowledge/list/_slug.vue",
-    "chunkName": "pages/knowledge/list/_slug",
-    "_name": "_eceead32"
+    "chunkName": "pages/knowledge/list/_slug"
   },
   {
     "name": "knowledge-view-slug",
     "path": "/knowledge/view/:slug?",
     "component": "/Users/xiangjianfeng/Github/diqiao/pages/knowledge/view/_slug.vue",
-    "chunkName": "pages/knowledge/view/_slug",
-    "_name": "_a1acd2a4"
+    "chunkName": "pages/knowledge/view/_slug"
   },
   {
     "name": "news-slug",
     "path": "/news/:slug?",
     "component": "/Users/xiangjianfeng/Github/diqiao/pages/news/_slug.vue",
-    "chunkName": "pages/news/_slug",
-    "_name": "_4db379eb"
+    "chunkName": "pages/news/_slug"
   },
   {
     "name": "all",
     "path": "/*",
     "component": "/Users/xiangjianfeng/Github/diqiao/pages/_.vue",
-    "chunkName": "pages/_",
-    "_name": "_4a8a265c"
+    "chunkName": "pages/_"
   }
 ]
