@@ -27,7 +27,7 @@
         <span>百洋挑剔喵商城</span>
       </a>
       <a class="item" href="https://mobile.yangkeduo.com/mall_page.html?mall_id=205546545" target="_blank">
-        <div class="flex items-center h-[101px]">
+        <div style="display: flex; align-items: center; height: 101px;">
           <img src="/imgs/buy/pdd.png" style="height: auto;" />
         </div>
 
