@@ -27,7 +27,7 @@
         <span>百洋挑剔喵商城</span>
       </a>
       <a class="item" href="https://mobile.yangkeduo.com/mall_page.html?mall_id=205546545" target="_blank">
-        <div style="height: 101px;">
+        <div class="flex items-center h-[101px]">
           <img src="/imgs/buy/pdd.png" style="height: auto;" />
         </div>
 
@@ -49,7 +49,7 @@ export default {
 .buy-box {
   /deep/ .el-dialog {
     width: 100%;
-    max-width: 700px;
+    max-width: 750px;
     border-radius: 25px;
     overflow: hidden;
     border: 3px #24a18f solid;

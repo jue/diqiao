@@ -1,4 +1,3 @@
-import axios from 'axios'
 export default {
   mode: 'universal',
   /*
@@ -44,6 +43,7 @@ export default {
    */
   css: [
     // 'element-ui/lib/theme-chalk/index.css'
+    // '~/assets/css/main.css',
   ],
   /*
    ** Plugins to load before mounting the App
@@ -62,7 +62,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/axios'],
+  modules: ['@nuxtjs/axios', '@nuxtjs/tailwindcss'],
   axios: {},
   /*
    ** Build configuration
