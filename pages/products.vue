@@ -58,10 +58,10 @@ export default {
         pregnant: ['pregnant001', 'pregnant002', 'pregnant003'],
         // child: ['child001', 'child002', 'child003', 'child004'],
         // child: ['child001', 'child00234'],
-        child: ['child001', 'child00234', 'child00567', 'child009', 'child010', 'child011'],
+        child: ['child001', 'child00234', 'child00567', 'child009', 'child010', 'child011', 'child012'],
         // baby: ['baby001', 'baby002'],
         baby: ['baby001', 'baby004'],
-        adult: ['adult001', 'adult002', 'pregnant001', 'adult003', 'adult004', 'adult005']
+        adult: ['adult001', 'adult002', 'pregnant001', 'adult003', 'adult005']
       }
     }
   },
