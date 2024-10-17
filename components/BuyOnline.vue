@@ -1,11 +1,5 @@
 <template>
-  <el-dialog
-    :show-close="false"
-    :visible.sync="$store.state.buyBox"
-    @close="closeDialog"
-    center
-    class="buy-box"
-  >
+  <el-dialog :show-close="false" :visible.sync="$store.state.buyBox" @close="closeDialog" center class="buy-box">
     <span class="title" slot="title">
       <span class="txt">在线购买</span>
     </span>
@@ -18,11 +12,9 @@
         <img src="/imgs/buy/tm.png" />
         <span>天猫迪巧官方旗舰店</span>
       </a>
-      <a
-        class="item m"
+      <a class="item m"
         href="https://shop.m.jd.com/?shopId=1000101244&utm_source=iosapp&utm_medium=appshare&utm_campaign=t_335139774&utm_term=CopyURL&ad_od=share"
-        target="_blank"
-      >
+        target="_blank">
         <img src="/imgs/buy/jd.png" />
         <span>京东迪巧官方旗舰店</span>
       </a>
@@ -35,7 +27,10 @@
         <span>百洋挑剔喵商城</span>
       </a>
       <a class="item" href="https://mobile.yangkeduo.com/mall_page.html?mall_id=205546545" target="_blank">
-        <img src="https://pic8.58cdn.com.cn/nowater/webim/big/n_v2e175e37bb79a43a1803ccc518d9db28f.png" />
+        <div style="height: 101px;">
+          <img src="/imgs/buy/pdd.png" style="height: auto;" />
+        </div>
+
         <span>拼多多迪巧官方旗舰店</span>
       </a>
     </div>
@@ -44,7 +39,7 @@
 <script>
 export default {
   methods: {
-    closeDialog() {
+    closeDialog () {
       this.$store.commit('update_buyBox', false)
     }
   }
@@ -59,11 +54,13 @@ export default {
     overflow: hidden;
     border: 3px #24a18f solid;
     border-top: none;
+
     .el-dialog__header {
       padding: 0;
       height: 75px;
     }
   }
+
   .title {
     display: flex;
     align-items: center;
@@ -73,35 +70,43 @@ export default {
     line-height: 75px;
     font-size: 30px;
     color: #fff;
+
     .logo {
       height: 54px;
       position: relative;
       left: 72px;
     }
+
     .txt {
       position: absolute;
       left: 50%;
       transform: translate(-50%, 0);
     }
   }
+
   .body {
     display: flex;
     justify-content: center;
     padding: 20px 0;
+
     .item {
       width: 30%;
       display: block;
+
       &.pc {
         display: block;
       }
+
       &.m {
         display: none;
       }
+
       img {
         display: block;
         margin: 0 auto;
         height: 101px;
       }
+
       span {
         color: #00594a;
         font-size: 18px;
@@ -120,6 +125,7 @@ export default {
         &.pc {
           display: none;
         }
+
         &.m {
           display: block;
         }
