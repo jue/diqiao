@@ -210,7 +210,7 @@ export default {
           line2: '每瓶90片'
         },
         child012: {
-          pretxt: '专为成人设计',
+          pretxt: '-',
           name: '迪巧小黄条液体维生素D3',
           line1: '维生素D补充',
           line2: '30条/6条'
