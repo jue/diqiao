@@ -167,9 +167,9 @@ export default {
           line2: '每瓶约58粒'
         },
         child009: {
-          pretxt: '专为0-6岁宝宝设计',
-          name: '迪巧小黄条液体钙条',
-          line1: '补充钙VD和VK',
+          pretxt: '-',
+          name: '迪巧小黄条液体钙锌',
+          line1: '儿童钙、锌补充',
           line2: '20条/盒'
         },
         child00234: {
