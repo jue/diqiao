@@ -98,7 +98,7 @@ export default {
           pretxt: '专为0-3岁宝宝设计',
           name: '小儿碳酸钙D3颗粒',
           line1: '儿童钙补充',
-          line2: '每盒10袋、20袋或30袋'
+          line2: '每盒10袋、20袋'
         },
         baby002: {
           pretxt: '专为1-3岁宝宝设计',
