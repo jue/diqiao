@@ -6,7 +6,10 @@
         <span class="divider"></span>
         <nuxt-link class="p-name" to="/products?cate=pregnant">
           孕产期钙营养
-          <i class="el-icon-arrow-down" v-if="$route.query.cate == 'pregnant'"></i>
+          <i
+            class="el-icon-arrow-down"
+            v-if="$route.query.cate == 'pregnant'"
+          ></i>
         </nuxt-link>
         <span class="divider"></span>
         <nuxt-link class="p-name" to="/products?cate=baby">
@@ -44,39 +47,47 @@ import Footer from '@/components/common/Footer.vue'
 import SlideImg from '@/components/products/SlideImg.vue'
 export default {
   head: {
-    title: '迪巧官网 - 迪巧 进口钙领先品牌'
+    title: '迪巧官网 - 迪巧 进口钙领先品牌',
   },
   components: {
     InnerTop,
     Slogan,
     Footer,
-    SlideImg
+    SlideImg,
   },
-  data () {
+  data() {
     return {
       arr: {
         pregnant: ['pregnant001', 'pregnant002', 'pregnant003'],
         // child: ['child001', 'child002', 'child003', 'child004'],
         // child: ['child001', 'child00234'],
-        child: ['child001', 'child00234', 'child00567', 'child009', 'child010', 'child011', 'child012'],
+        child: [
+          'child001',
+          'child00234',
+          'child00567',
+          'child009',
+          'child010',
+          'child011',
+          'child012',
+        ],
         // baby: ['baby001', 'baby002'],
         baby: ['baby001', 'baby004'],
-        adult: ['adult001', 'adult002', 'pregnant001', 'adult003', 'adult005']
-      }
+        adult: ['adult001', 'pregnant001', 'adult003', 'adult005'],
+      },
     }
   },
-  mounted () { },
+  mounted() {},
   methods: {
-    setH () {
+    setH() {
       let w = window.innerWidth < 1186 ? 1186 : window.innerWidth
       this.h = w * 0.4375 + 'px'
-    }
+    },
   },
   watch: {
     '$route.query.cate': function () {
       console.log(this.$route.query.cate)
-    }
-  }
+    },
+  },
 }
 </script>
 
@@ -97,9 +108,11 @@ export default {
     display: block;
     width: 3px;
     height: 50px;
-    background: linear-gradient(rgba(250, 250, 250, 0),
-        rgba(250, 250, 250, 1),
-        rgba(250, 250, 250, 0));
+    background: linear-gradient(
+      rgba(250, 250, 250, 0),
+      rgba(250, 250, 250, 1),
+      rgba(250, 250, 250, 0)
+    );
   }
 
   .p-name {

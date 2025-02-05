@@ -5,7 +5,10 @@
         <el-carousel arrow="always" class="carousel">
           <el-carousel-item v-for="i in carouselImages" :key="i">
             <div class="item">
-              <img :src="'/imgs/product/' + $route.query.long + '/' + i + '.png'" @error="handleImageError(i)" />
+              <img
+                :src="'/imgs/product/' + $route.query.long + '/' + i + '.png'"
+                @error="handleImageError(i)"
+              />
             </div>
           </el-carousel-item>
         </el-carousel>
@@ -26,7 +29,9 @@
 
         <div class="desc">
           <div class="buy">
-            <span @click="$store.commit('update_buyBox', true)" class="btn">在线购买</span>
+            <span @click="$store.commit('update_buyBox', true)" class="btn"
+              >在线购买</span
+            >
           </div>
           <div class="small">可前往迪巧指定的经销商或线下各大药房购买</div>
         </div>
@@ -34,15 +39,25 @@
     </el-row>
     <el-row>
       <el-col :span="24">
-
-        <img :src="'/imgs/product/long/' + $route.query.long + '_long.jpg'" @error="$handleImageError"
-          @click="onPreview" class="desc-img" />
-        <img :src="'/imgs/product/' + $route.query.long + '/spec2.jpg'" class="desc-img" @error="$handleImageError" />
+        <img
+          :src="'/imgs/product/long/' + $route.query.long + '_long.jpg'"
+          @error="$handleImageError"
+          @click="onPreview"
+          class="desc-img"
+        />
+        <img
+          :src="'/imgs/product/' + $route.query.long + '/spec2.jpg'"
+          class="desc-img"
+          @error="$handleImageError"
+        />
         <!-- <el-image v-else :preview-src-list="['/imgs/product/'+$route.query.long+'/1.png']" :src="'/imgs/product/long/'+$route.query.long+'_long.jpg'" class="desc-img"></el-image> -->
       </el-col>
     </el-row>
-    <image-viewer :on-close="closeViewer" :url-list="['/imgs/product/' + $route.query.long + '/spec.jpg']"
-      v-if="showViewer"></image-viewer>
+    <image-viewer
+      :on-close="closeViewer"
+      :url-list="['/imgs/product/' + $route.query.long + '/spec.jpg']"
+      v-if="showViewer"
+    ></image-viewer>
   </div>
 </template>
 
@@ -51,180 +66,180 @@ import ImageViewer from 'element-ui/packages/image/src/image-viewer'
 export default {
   layout: 'inner',
   head: {
-    title: '迪巧官网 - 迪巧 进口钙领先品牌'
+    title: '迪巧官网 - 迪巧 进口钙领先品牌',
   },
   components: {
-    ImageViewer
+    ImageViewer,
   },
   methods: {
-    onPreview () {
+    onPreview() {
       this.showViewer = true
     },
     // 关闭查看器
-    closeViewer () {
+    closeViewer() {
       this.showViewer = false
     },
-    handleImageError (index) {
-      const imageIndex = this.carouselImages.indexOf(index);
+    handleImageError(index) {
+      const imageIndex = this.carouselImages.indexOf(index)
       if (imageIndex !== -1) {
-        this.carouselImages = this.carouselImages.slice(0, imageIndex);
+        this.carouselImages = this.carouselImages.slice(0, imageIndex)
       }
     },
   },
-  data () {
+  data() {
     return {
       showViewer: false,
       json: {
         pregnant001: {
-          pretxt: '专为成人设计',
-          name: '维D钙咀嚼片',
+          pretxt: '-',
+          name: '碳酸钙D3咀嚼片（Ⅲ）',
           line1:
             '用于妊娠和哺乳期妇女、更年期妇女、老年人、儿童等的钙补充剂，并帮助防治骨质疏松症。',
-          line2: '每瓶30片、60片、90片或120片'
+          line2: '每瓶30片、60片、90片或120片',
         },
         pregnant002: {
           pretxt: '专为孕妈设计',
           name: '钙维生素D咀嚼片',
           line1: '补充钙、维生素D',
-          line2: '每瓶86片或106片'
+          line2: '每瓶86片或106片',
         },
         pregnant003: {
-          pretxt: '专为成人设计',
+          pretxt: '-',
           name: '迪巧小粉条液体钙',
           line1: '成人钙补充',
-          line2: '20条/6条'
+          line2: '20条/6条',
         },
         baby001: {
           pretxt: '专为0-3岁宝宝设计',
           name: '小儿碳酸钙D3颗粒',
           line1: '儿童钙补充',
-          line2: '每盒10袋、20袋'
+          line2: '每盒10袋、20袋',
         },
         baby002: {
           pretxt: '专为1-3岁宝宝设计',
           name: '钙维生素D颗粒',
           line1: '补充钙、维生素D',
-          line2: '每盒15袋或25袋'
+          line2: '每盒15袋或25袋',
         },
         baby003: {
           pretxt: '6-36个月龄婴幼儿及37-60个月龄儿童',
           name: 'DHA营养包',
           line1: '辅食营养补充食品',
-          line2: '每盒30袋'
+          line2: '每盒30袋',
         },
         baby004: {
           pretxt: '专为0-6岁宝宝设计',
           name: '迪巧小黄条液体钙条',
           line1: '补充钙VD和VK',
-          line2: '20条/盒'
+          line2: '20条/盒',
         },
         child001: {
-          pretxt: '专为3岁以上儿童设计',
-          name: '儿童维D钙咀嚼片',
+          pretxt: '-',
+          name: '碳酸钙D3咀嚼片（Ⅲ）',
           line1: '儿童钙补充',
-          line2: '每瓶30片或60片'
+          line2: '每瓶30片或60片',
         },
         child002: {
           pretxt: '专为3岁以上儿童设计',
           name: '钙维生素D咀嚼片-橙子味',
           line1: '补充钙、维生素D',
-          line2: '每瓶45片或80片'
+          line2: '每瓶45片或80片',
         },
         child003: {
           pretxt: '专为3岁以上儿童设计',
           name: '钙维生素D咀嚼片-苹果味',
           line1: '补充钙、维生素D',
-          line2: '每瓶45片或80片'
+          line2: '每瓶45片或80片',
         },
         child004: {
           pretxt: '专为3岁以上儿童设计',
           name: '钙维生素D咀嚼片-菠萝味',
           line1: '补充钙、维生素D',
-          line2: '每瓶45片或80片'
+          line2: '每瓶45片或80片',
         },
         child00567: {
-          pretxt: '专为儿童、青少年设计',
+          pretxt: '-',
           name: '钙维生素D维生素K咀嚼片',
           line1: '补充钙、维生素D、维生素K',
-          line2: '每瓶80片（橙子、菠萝、苹果）'
+          line2: '每瓶80片（橙子、菠萝、苹果）',
         },
         child006: {
           pretxt: '专为儿童、青少年设计',
           name: '钙维生素D维生素K咀嚼片',
           line1: '补充钙、维生素D、维生素K',
-          line2: '每瓶80片（橙子、菠萝、苹果）'
+          line2: '每瓶80片（橙子、菠萝、苹果）',
         },
         child007: {
           pretxt: '专为儿童、青少年设计',
           name: '钙维生素D维生素K咀嚼片',
           line1: '补充钙、维生素D、维生素K',
-          line2: '每瓶80片（橙子、菠萝、苹果）'
+          line2: '每瓶80片（橙子、菠萝、苹果）',
         },
         child008: {
           pretxt: '',
           name: '含钙软糖',
           line1: '',
-          line2: '每瓶约58粒'
+          line2: '每瓶约58粒',
         },
         child009: {
           pretxt: '-',
           name: '迪巧小黄条液体钙锌',
           line1: '儿童钙、锌补充',
-          line2: '20条/盒'
+          line2: '20条/盒',
         },
         child00234: {
           pretxt: '专为3岁以上儿童设计',
           name: '钙维生素D咀嚼片',
           line1: '补充钙、维生素D',
-          line2: '每瓶45片或80片'
+          line2: '每瓶45片或80片',
         },
         child010: {
           pretxt: '-',
           name: '迪巧小黄条液体钙PLUS',
           line1: '儿童钙补充',
-          line2: '20条/6条'
+          line2: '20条/6条',
         },
         child011: {
           pretxt: '-',
           name: '迪巧小黄条液体钙锌',
           line1: '儿童钙、锌补充',
-          line2: '20条/6条'
+          line2: '20条/6条',
         },
         adult001: {
           pretxt: '专为成人设计',
           name: '碳酸钙D3片',
           line1:
             '用于妊娠和哺乳期妇女、更年期妇女、老年人等的钙补充剂并帮助防治骨质疏松症。',
-          line2: '每瓶30片、60片或90片'
+          line2: '每瓶30片、60片或90片',
         },
-        adult002: {
-          pretxt: '专为成年女性设计',
-          name: '迪巧牌秀源女性片',
-          line1: '增加骨密度、调节血脂',
-          line2: '30片'
-        },
+        // adult002: {
+        //   pretxt: '专为成年女性设计',
+        //   name: '迪巧牌秀源女性片',
+        //   line1: '增加骨密度、调节血脂',
+        //   line2: '30片',
+        // },
         adult003: {
           pretxt: '专为成人设计',
           name: '钙维生素D维生素K咀嚼片',
           line1: '补充钙、维生素D、维生素K',
-          line2: '每瓶90片'
+          line2: '每瓶90片',
         },
         child012: {
           pretxt: '-',
           name: '迪巧小黄条液体维生素D3',
           line1: '维生素D补充',
-          line2: '30条/6条'
+          line2: '30条/6条',
         },
         adult005: {
           pretxt: '专为成人设计',
           name: '迪巧双固力骨胶原钙',
           line1: '成人骨胶原钙补充',
-          line2: '72片'
+          line2: '72片',
         },
       },
       carouselImages: [1, 2, 3, 4, 5],
     }
-  }
+  },
 }
 </script>
 
@@ -248,7 +263,8 @@ export default {
     position: relative;
     height: 100%;
 
-    img {}
+    img {
+    }
   }
 }
 
