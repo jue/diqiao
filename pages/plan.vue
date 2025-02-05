@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <el-row :gutter="40">
+    <el-row :gutter="40" class="flex">
       <el-col :md="11" :xs="24">
         <div class="win">
           <img class="win-img" src="/imgs/knowledge/pic.png" />
@@ -119,5 +119,10 @@ export default {
     font-size: 14px;
     padding: 20px 0;
   }
+}
+
+.flex {
+  display: flex;
+  align-items: center;
 }
 </style>
