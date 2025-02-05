@@ -4,13 +4,21 @@
       <span class="logo">
         <img alt src="/imgs/logo.png" />
       </span>
-      <nuxt-link :class="$route.name == 'index' ? 'curr' : '' " class="link" to="/">
-      <i class="el-icon-jue-home"></i>
-      首页
+      <nuxt-link
+        :class="$route.name == 'index' ? 'curr' : ''"
+        class="link"
+        to="/"
+      >
+        <i class="el-icon-jue-home"></i>
+        首页
       </nuxt-link>
-      <span :class="$route.name == 'products' ? 'curr' : '' " class="link link-products">
+      <span
+        :class="$route.name == 'products' ? 'curr' : ''"
+        class="link link-products"
+      >
         <span @click="$router.push('/products/?cate=pregnant')">
-        <i class="el-icon-jue-products"></i>产品中心</span>
+          <i class="el-icon-jue-products"></i>产品中心</span
+        >
         <span class="sub-menu">
           <nuxt-link class="sub-link" to="/products?cate=pregnant">
             <img alt src="/imgs/menu/p_cat001.png" />
@@ -33,10 +41,27 @@
           </nuxt-link>
         </span>
       </span>
-      <nuxt-link :class="$route.name == 'knowledge' ? 'curr' : '' " class="link" to="/knowledge"><i class="el-icon-jue-knowledge"></i>钙营养学院</nuxt-link>
-      <nuxt-link :class="$route.name == 'plan' ? 'curr' : '' " class="link" to="/plan"><i class="el-icon-jue-plan"></i>骨健康领先计划</nuxt-link>
-      <nuxt-link :class="$route.name == 'honor' ? 'curr' : '' " class="link" to="/honor"><i class="el-icon-jue-honor"></i>迪巧荣誉</nuxt-link>
-      <span @click="$store.commit('update_buyBox', true)" class="link"><i class="el-icon-jue-buy"></i>在线购买</span>
+      <nuxt-link
+        :class="$route.name == 'knowledge' ? 'curr' : ''"
+        class="link"
+        to="/knowledge"
+        ><i class="el-icon-jue-knowledge"></i>钙营养学院</nuxt-link
+      >
+      <nuxt-link
+        :class="$route.name == 'plan' ? 'curr' : ''"
+        class="link"
+        to="/plan"
+        ><i class="el-icon-jue-plan"></i>中国儿童身高促进计划</nuxt-link
+      >
+      <nuxt-link
+        :class="$route.name == 'honor' ? 'curr' : ''"
+        class="link"
+        to="/honor"
+        ><i class="el-icon-jue-honor"></i>迪巧荣誉</nuxt-link
+      >
+      <span @click="$store.commit('update_buyBox', true)" class="link"
+        ><i class="el-icon-jue-buy"></i>在线购买</span
+      >
     </div>
 
     <el-drawer
@@ -63,10 +88,26 @@
             <i class="el-icon-jue-products"></i>
             <span>产品中心</span>
           </template>
-          <el-menu-item @click.native="linkTo('/products/?cate=pregnant')" index="/products-1">孕产钙营养</el-menu-item>
-          <el-menu-item @click.native="linkTo('/products/?cate=baby')" index="/products-2">婴幼儿钙营养</el-menu-item>
-          <el-menu-item @click.native="linkTo('/products/?cate=child')" index="/products-3">儿童钙营养</el-menu-item>
-          <el-menu-item @click.native="linkTo('/products/?cate=adult')" index="/products-4">成人钙营养</el-menu-item>
+          <el-menu-item
+            @click.native="linkTo('/products/?cate=pregnant')"
+            index="/products-1"
+            >孕产钙营养</el-menu-item
+          >
+          <el-menu-item
+            @click.native="linkTo('/products/?cate=baby')"
+            index="/products-2"
+            >婴幼儿钙营养</el-menu-item
+          >
+          <el-menu-item
+            @click.native="linkTo('/products/?cate=child')"
+            index="/products-3"
+            >儿童钙营养</el-menu-item
+          >
+          <el-menu-item
+            @click.native="linkTo('/products/?cate=adult')"
+            index="/products-4"
+            >成人钙营养</el-menu-item
+          >
         </el-submenu>
         <el-menu-item @click.native="linkTo('/knowledge')">
           <i class="el-icon-jue-products"></i>
@@ -74,7 +115,7 @@
         </el-menu-item>
         <el-menu-item @click.native="linkTo('/plan')">
           <i class="el-icon-jue-plan"></i>
-          <span slot="title">骨健康领先计划</span>
+          <span slot="title">中国儿童身高促进计划</span>
         </el-menu-item>
 
         <el-menu-item @click.native="linkTo('/honor')">
@@ -87,13 +128,14 @@
             <i class="el-icon-jue-buy"></i>
             <span>在线购买</span>
           </template>
-          <el-menu-item >
-            <a href="https://shop.m.jd.com/?shopId=1000101244&utm_source=iosapp&utm_medium=appshare&utm_campaign=t_335139774&utm_term=CopyURL&ad_od=share">京东迪巧官方旗舰店</a>
-          </el-menu-item>
           <el-menu-item>
             <a
-              href="https://m.tb.cn/h.VVucZlL?sm=36acc6"
-            >天猫迪巧官方旗舰店</a>
+              href="https://shop.m.jd.com/?shopId=1000101244&utm_source=iosapp&utm_medium=appshare&utm_campaign=t_335139774&utm_term=CopyURL&ad_od=share"
+              >京东迪巧官方旗舰店</a
+            >
+          </el-menu-item>
+          <el-menu-item>
+            <a href="https://m.tb.cn/h.VVucZlL?sm=36acc6">天猫迪巧官方旗舰店</a>
           </el-menu-item>
           <el-menu-item>
             <a href="https://www.baiyangwang.com/">百洋商城</a>
@@ -101,14 +143,19 @@
           <el-menu-item>
             <a
               href="https://mobile.yangkeduo.com/mall_page.html?mall_id=205546545"
-            >拼多多迪巧官方旗舰店</a>
+              >拼多多迪巧官方旗舰店</a
+            >
           </el-menu-item>
         </el-submenu>
       </el-menu>
     </el-drawer>
 
     <div class="toggle-menu">
-      <div :class="toggleClose ? 'toggle-close' : ''" @click="changeMenu" class="toggle-btn">
+      <div
+        :class="toggleClose ? 'toggle-close' : ''"
+        @click="changeMenu"
+        class="toggle-btn"
+      >
         <span class="line line1"></span>
         <span class="line line2"></span>
         <span class="line line3"></span>
@@ -116,7 +163,7 @@
         <span class="line line5"></span>
         <span class="line line6"></span>
       </div>
-      <span style="color: #fff; padding-left:10px;"> 菜单</span>
+      <span style="color: #fff; padding-left: 10px"> 菜单</span>
     </div>
 
     <buy-online></buy-online>
@@ -126,7 +173,7 @@
 import BuyOnline from '@/components/BuyOnline.vue'
 export default {
   components: {
-    BuyOnline
+    BuyOnline,
   },
   async asyncData(context) {
     console.log(context.route)
@@ -135,7 +182,7 @@ export default {
     return {
       toggleClose: false,
       visible: false,
-      dialogVisible: false
+      dialogVisible: false,
     }
   },
   methods: {
@@ -147,8 +194,8 @@ export default {
     changeMenu() {
       this.toggleClose = !this.toggleClose
       this.visible = !this.visible
-    }
-  }
+    },
+  },
 }
 </script>
 <style lang="less" scoped>
@@ -183,7 +230,7 @@ export default {
   padding: 48px 20px 10px;
   color: rgba(250, 250, 250, 0.8);
   cursor: pointer;
-  i{
+  i {
     display: block;
     font-size: 24px;
     margin-bottom: 3px;
