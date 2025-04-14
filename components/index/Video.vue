@@ -31,7 +31,7 @@ export default {
         {
           title: '品牌故事 Brand Story',
           icon: 'icon6',
-          imgSrc: '/imgs/index/video002.png',
+          imgSrc: '/imgs/index/video002.jpg',
           vurl: 'http://api.diqiao.com.cn/attachment/diqiao/diqiao3.mp4',
         },
       ],
