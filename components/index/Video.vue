@@ -39,9 +39,7 @@ export default {
   },
   methods: {
     showVideo(vurl) {
-      if (!vurl.includes('http')) {
-        this.$refs.video.show(vurl)
-      }
+      // this.$refs.video.show(vurl)
     },
   },
 }
