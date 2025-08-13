@@ -13,7 +13,7 @@ import TimeLine from '@/components/TimeLine.vue'
 export default {
   layout: 'inner',
   head: {
-    title: '迪巧官网 - 迪巧 进口钙领先品牌'
+    title: '迪巧 全球补钙专家'
   },
   components: {
     TimeLine
@@ -23,7 +23,7 @@ export default {
       .$post('/tree/index', {
         cate: 'honor'
       })
-      .then(res => {
+      .then((res) => {
         return {
           listData: res.data.list
         }

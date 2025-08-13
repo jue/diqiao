@@ -33,22 +33,22 @@ import TimeLine from '@/components/TimeLine.vue'
 export default {
   layout: 'inner',
   head: {
-    title: '迪巧官网 - 迪巧 进口钙领先品牌',
+    title: '迪巧 全球补钙专家'
   },
   async asyncData({ app }) {
     return await app.$axios
       .$post('/tree/index', {
-        cate: 'plan',
+        cate: 'plan'
       })
       .then((res) => {
         return {
-          listData: res.data.list,
+          listData: res.data.list
         }
       })
   },
   components: {
-    TimeLine,
-  },
+    TimeLine
+  }
 }
 </script>
 

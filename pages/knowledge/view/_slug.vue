@@ -9,7 +9,7 @@
 
     <el-row>
       <el-col :span="24">
-        <div class="title">{{listData.title}}</div>
+        <div class="title">{{ listData.title }}</div>
         <div class="content" v-html="listData.content"></div>
       </el-col>
     </el-row>
@@ -17,12 +17,22 @@
     <div class="pages">
       <div class="line">
         <span>上一篇:</span>
-        <a class="link" :href="'/knowledge/view/'+listData.prev.sys_id" v-if="listData.prev">{{listData.prev.title}}</a>
+        <a
+          class="link"
+          :href="'/knowledge/view/' + listData.prev.sys_id"
+          v-if="listData.prev"
+          >{{ listData.prev.title }}</a
+        >
         <span v-else>没有了</span>
       </div>
       <div class="line">
         <span>下一篇:</span>
-        <a class="link" :href="'/knowledge/view/'+listData.next.sys_id" v-if="listData.next">{{listData.next.title}}</a>
+        <a
+          class="link"
+          :href="'/knowledge/view/' + listData.next.sys_id"
+          v-if="listData.next"
+          >{{ listData.next.title }}</a
+        >
         <span v-else>没有了</span>
       </div>
     </div>
@@ -33,15 +43,15 @@
 export default {
   layout: 'inner',
   head: {
-    title: '迪巧官网 - 迪巧 进口钙领先品牌'
+    title: '迪巧 全球补钙专家'
   },
-  async asyncData({ app,params }) {
+  async asyncData({ app, params }) {
     return await app.$axios
       .$post('/knowledge/detail', {
         sys_id: params.slug,
         search: ''
       })
-      .then(res => {
+      .then((res) => {
         return {
           listData: res.data
         }
@@ -96,7 +106,7 @@ export default {
     text-indent: 40px;
     display: block;
   }
-  img{
+  img {
     width: 100%;
   }
 }

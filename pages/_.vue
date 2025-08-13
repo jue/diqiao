@@ -55,7 +55,12 @@
           <News :listData="listData.list"></News>
         </div>
         <div class="box-footer">
-          <el-pagination :page-size="key.count" @current-change="handleCurrentChange" :total="listData.total" layout="prev, pager, next"></el-pagination>
+          <el-pagination
+            :page-size="key.count"
+            @current-change="handleCurrentChange"
+            :total="listData.total"
+            layout="prev, pager, next"
+          ></el-pagination>
         </div>
       </div>
 
@@ -74,7 +79,7 @@ import News from '@/components/index/News.vue'
 import Video from '@/components/index/Video.vue'
 export default {
   head: {
-    title: '迪巧官网 - 迪巧 进口钙领先品牌'
+    title: '迪巧 全球补钙专家'
   },
   components: {
     InnerTop,
@@ -104,7 +109,7 @@ export default {
           page: this.key.page,
           search: ''
         })
-        .then(res => {
+        .then((res) => {
           this.listData = res.data
         })
     },
@@ -173,18 +178,18 @@ export default {
   }
 }
 
-/deep/ .el-pagination{
+/deep/ .el-pagination {
   color: #727171;
 
-  button:hover{
+  button:hover {
     color: #24a18f;
   }
 }
 
-/deep/ .el-pager li.active{
+/deep/ .el-pager li.active {
   color: #24a18f;
 }
-/deep/ .el-pager li:hover{
+/deep/ .el-pager li:hover {
   color: #24a18f;
 }
 

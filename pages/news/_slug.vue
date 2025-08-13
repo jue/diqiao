@@ -9,7 +9,7 @@
 
     <el-row>
       <el-col :span="24">
-        <div class="title">{{listData.title}}</div>
+        <div class="title">{{ listData.title }}</div>
         <div class="content" v-html="listData.content"></div>
       </el-col>
     </el-row>
@@ -18,19 +18,21 @@
       <div class="line">
         <span>上一篇:</span>
         <a
-          :href="'/news/'+listData.prev.sys_id"
+          :href="'/news/' + listData.prev.sys_id"
           class="link"
           v-if="listData.prev"
-        >{{listData.prev.title}}</a>
+          >{{ listData.prev.title }}</a
+        >
         <span v-else>没有了</span>
       </div>
       <div class="line">
         <span>下一篇:</span>
         <a
-          :href="'/news/'+listData.next.sys_id"
+          :href="'/news/' + listData.next.sys_id"
           class="link"
           v-if="listData.next"
-        >{{listData.next.title}}</a>
+          >{{ listData.next.title }}</a
+        >
         <span v-else>没有了</span>
       </div>
     </div>
@@ -39,13 +41,13 @@
 
 <script>
 export default {
-  data(){
+  data() {
     return {
-      title: '迪巧官网 - 迪巧 进口钙领先品牌'
+      title: '迪巧 全球补钙专家'
     }
   },
   layout: 'inner',
-  head(){
+  head() {
     return {
       title: this.title
     }
@@ -57,7 +59,7 @@ export default {
         sys_id: params.slug,
         search: ''
       })
-      .then(res => {
+      .then((res) => {
         console.log(app)
         return {
           listData: res.data,

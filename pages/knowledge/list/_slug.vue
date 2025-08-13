@@ -3,20 +3,25 @@
     <div class="box">
       <div class="box-head">
         <i class="iconfont icon1"></i>
-        <span>{{$store.state.cate[$route.params.slug]}}</span>
+        <span>{{ $store.state.cate[$route.params.slug] }}</span>
         <!-- <span>{{$route.params.slug}}</span> -->
       </div>
     </div>
 
     <el-row>
       <el-col :span="24">
-        <div :key="index" class="item" v-for="(item, index) in listData" @click="$router.push('/knowledge/view/'+item.sys_id)" >
+        <div
+          :key="index"
+          class="item"
+          v-for="(item, index) in listData"
+          @click="$router.push('/knowledge/view/' + item.sys_id)"
+        >
           <div class="dot"></div>
-          <div class="title">{{item.title}}</div>
+          <div class="title">{{ item.title }}</div>
           <i class="btn el-icon-right"></i>
         </div>
         <div class="page">
-          <a href="/knowledge" class="back">返回</a> 
+          <a href="/knowledge" class="back">返回</a>
         </div>
       </el-col>
     </el-row>
@@ -27,7 +32,7 @@
 export default {
   layout: 'inner',
   head: {
-    title: '迪巧官网 - 迪巧 进口钙领先品牌'
+    title: '迪巧 全球补钙专家'
   },
   async asyncData({ app, params }) {
     return await app.$axios
@@ -36,7 +41,7 @@ export default {
         count: 10000,
         page: 1
       })
-      .then(res => {
+      .then((res) => {
         return {
           listData: res.data.list
         }
@@ -46,10 +51,10 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.page{
+.page {
   text-align: center;
   padding-top: 20px;
-  .back{
+  .back {
     font-size: 18px;
     display: inline-block;
     background: #24a18f;

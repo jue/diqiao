@@ -37,7 +37,7 @@
 export default {
   layout: 'inner',
   head: {
-    title: '迪巧官网 - 迪巧 进口钙领先品牌'
+    title: '迪巧 全球补钙专家'
   }
   // async asyncData({ app, params }) {
   //   let slug = params.slug

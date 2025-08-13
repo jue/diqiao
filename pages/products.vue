@@ -47,13 +47,13 @@ import Footer from '@/components/common/Footer.vue'
 import SlideImg from '@/components/products/SlideImg.vue'
 export default {
   head: {
-    title: '迪巧官网 - 迪巧 进口钙领先品牌',
+    title: '迪巧 全球补钙专家'
   },
   components: {
     InnerTop,
     Slogan,
     Footer,
-    SlideImg,
+    SlideImg
   },
   data() {
     return {
@@ -68,12 +68,12 @@ export default {
           'child009',
           'child010',
           'child011',
-          'child012',
+          'child012'
         ],
         // baby: ['baby001', 'baby002'],
         baby: ['baby001', 'baby004'],
-        adult: ['adult001', 'pregnant001', 'adult003', 'adult005'],
-      },
+        adult: ['adult001', 'pregnant001', 'adult003', 'adult005']
+      }
     }
   },
   mounted() {},
@@ -81,13 +81,13 @@ export default {
     setH() {
       let w = window.innerWidth < 1186 ? 1186 : window.innerWidth
       this.h = w * 0.4375 + 'px'
-    },
+    }
   },
   watch: {
     '$route.query.cate': function () {
       console.log(this.$route.query.cate)
-    },
-  },
+    }
+  }
 }
 </script>
 
